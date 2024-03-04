@@ -4,5 +4,5 @@ SELECT company_name, DATE(timestamp) as fecha
 FROM transaction
 INNER JOIN company
 ON transaction.company_id = company.id
-WHERE declined = 1
+WHERE declined = 0
 HAVING  fecha ='2022-02-13' OR fecha ='2022-02-28' OR fecha ='2022-03-16' 
